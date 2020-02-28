@@ -1,17 +1,3 @@
-$bg-color: rgba(42, 38, 61, 0.82);
-$biggest: 48px;
-$warna-utama: #FCB371;
-$warna-kedua: #FFFFFF;
-
-@mixin lebar-layar($media) {
-  @if $media == hp {
-    @media only screen and (max-width: $layar-hp) { @content; }
-  }
-  @else if $media == tablet {
-    @media only screen and (min-width: $layar-hp + 1) and (max-width: $layar-tablet) { @content; }
-  }
-}
-
 body#about-us {
   max-width: 100%;
   height: auto;
