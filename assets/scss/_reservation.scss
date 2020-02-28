@@ -45,10 +45,10 @@ body#reservation {
       @include lebar-layar(hp) {
         font-size: 12vw;
         line-height: 24vw;
-        margin: 30% auto 10%;
+        margin: 20% auto 5%;
       }
       @include lebar-layar(tablet) {
-        margin: 25% auto 5%;
+        margin: 15% auto 5%;
       }
       font-family: 'Pacifico';
       font-size: $biggest;
@@ -62,11 +62,11 @@ body#reservation {
     .row {
       display: flex;
       justify-content: center;
-
       form {
-        width: 382px;
-
-        input {
+        width: 460px;
+        display: flex;
+        flex-direction: column;
+        input, select, textarea{
           &:focus {
             outline: none;
           }
@@ -75,8 +75,9 @@ body#reservation {
             color: #A9A9A9;
             font-size: 12px;
           }
-          width: 100%;
+          font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
           padding: 16px;
+          margin: 8px;
           border: none;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 8px;
@@ -84,11 +85,31 @@ body#reservation {
           -moz-border-radius: 8px;
           -ms-border-radius: 8px;
           -o-border-radius: 8px;
+          resize: none;
+        }
+
+        .grup-formulir {
+          display: flex;
+          @include lebar-layar(hp) {
+            flex-wrap: wrap;
+          }
+          select {
+            font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
+            color: #A9A9A9;
+            font-size: 12px;
+            background-image: url('../img/Polygon\ 1.svg');
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-repeat: no-repeat;
+            background-position: 182px 21px;
+          }
+          input, select {
+            width: 100%;
+          }
         }
       }
     }
-
-
   }
 
 }

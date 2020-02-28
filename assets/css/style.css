@@ -98,11 +98,11 @@ body#homepage .container h1 {
   max-width: 360px;
   line-height: 84px;
   text-align: center;
-  color: #FCB371;
+  color: #fcb371;
   margin: 14px auto;
 }
 body#homepage .container h1 span {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media only screen and (max-width: 414px) {
   body#homepage .container h1 {
@@ -115,7 +115,7 @@ body#homepage .container p {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 60px;
 }
 body#homepage .container .row {
@@ -124,27 +124,9 @@ body#homepage .container .row {
   flex-wrap: wrap;
 }
 body#homepage .container .row a {
-  font-family: "Pacifico";
   text-decoration: none;
-  color: #FCB371;
   font-size: 12px;
   padding: 14px 46px;
-}
-body#homepage .container .row .btn {
-  border: 2px solid #FCB371;
-  min-width: 156px;
-  min-height: 46px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  box-sizing: border-box;
-  margin: 6.5px;
-}
-body#homepage .container .row .btn-utama {
-  background-color: #FCB371;
-  color: #FFFFFF;
 }
 
 body#about-us {
@@ -202,7 +184,7 @@ body#about-us .container h1 {
   line-height: 84px;
   max-width: 360px;
   text-align: center;
-  color: #FCB371;
+  color: #fcb371;
   margin: 171px auto 46px;
 }
 @media only screen and (max-width: 414px) {
@@ -223,7 +205,7 @@ body#about-us .container p {
   font-size: 28px;
   line-height: 33px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: auto;
 }
 @media only screen and (max-width: 414px) {
@@ -288,19 +270,19 @@ body#reservation .container h1 {
   line-height: 84px;
   max-width: 360px;
   text-align: center;
-  color: #FCB371;
+  color: #fcb371;
   margin: 58px auto 67px;
 }
 @media only screen and (max-width: 414px) {
   body#reservation .container h1 {
     font-size: 12vw;
     line-height: 24vw;
-    margin: 30% auto 10%;
+    margin: 20% auto 5%;
   }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
   body#reservation .container h1 {
-    margin: 25% auto 5%;
+    margin: 15% auto 5%;
   }
 }
 body#reservation .container .row {
@@ -308,11 +290,14 @@ body#reservation .container .row {
   justify-content: center;
 }
 body#reservation .container .row form {
-  width: 382px;
+  width: 460px;
+  display: flex;
+  flex-direction: column;
 }
-body#reservation .container .row form input {
-  width: 100%;
+body#reservation .container .row form input, body#reservation .container .row form select, body#reservation .container .row form textarea {
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   padding: 16px;
+  margin: 8px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -320,14 +305,78 @@ body#reservation .container .row form input {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  resize: none;
 }
-body#reservation .container .row form input:focus {
+body#reservation .container .row form input:focus, body#reservation .container .row form select:focus, body#reservation .container .row form textarea:focus {
   outline: none;
 }
-body#reservation .container .row form input::placeholder {
+body#reservation .container .row form input::placeholder, body#reservation .container .row form select::placeholder, body#reservation .container .row form textarea::placeholder {
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   color: #A9A9A9;
   font-size: 12px;
+}
+body#reservation .container .row form .grup-formulir {
+  display: flex;
+}
+@media only screen and (max-width: 414px) {
+  body#reservation .container .row form .grup-formulir {
+    flex-wrap: wrap;
+  }
+}
+body#reservation .container .row form .grup-formulir select {
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  color: #A9A9A9;
+  font-size: 12px;
+  background-image: url("../img/Polygon 1.svg");
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: 182px 21px;
+}
+body#reservation .container .row form .grup-formulir input, body#reservation .container .row form .grup-formulir select {
+  width: 100%;
+}
+
+.warna-pertama {
+  color: #fcb371;
+}
+
+.warna-kedua {
+  color: #ffffff;
+}
+
+.btn {
+  border: 2px solid #fcb371;
+  font-family: "Pacifico";
+  min-width: 156px;
+  min-height: 46px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-sizing: border-box;
+  margin: 6.5px;
+}
+
+.btn-utama {
+  border: none;
+  background-color: #fcb371;
+  color: #ffffff;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.btn-utama:hover {
+  background-color: #d89255;
+}
+
+.btn-kedua {
+  background-color: transparent;
+  color: #fcb371;
 }
 
 /*# sourceMappingURL=style.css.map */

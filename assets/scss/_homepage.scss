@@ -67,30 +67,10 @@ body#homepage {
       flex-wrap: wrap;
   
       a {
-        font-family: 'Pacifico';
         text-decoration: none;
-        color: $warna-utama;
         font-size: 12px;
         padding: 14px 46px ;
-      }
-  
-      .btn {
-        border: 2px solid $warna-utama;
-        min-width: 156px;
-        min-height: 46px;
-        border-radius: 6px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        -ms-border-radius: 6px;
-        -o-border-radius: 6px;
-        box-sizing: border-box;
-        margin: 6.5px;
-      }
-  
-      .btn-utama {
-        background-color: $warna-utama;
-        color: $warna-kedua;
-      }
+      }     
     }
   }
 
