@@ -1,3 +1,151 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  max-width: 100%;
+  height: auto;
+  background: url("../img/ImageBackground.png") no-repeat center fixed;
+  background-size: cover;
+}
+body::after {
+  content: "";
+  background-color: rgba(42, 38, 61, 0.82);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.container {
+  padding-bottom: 24px;
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    padding: 0 3% 20%;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .container {
+    padding: 0 3% 20%;
+  }
+}
+.container img {
+  align-items: center;
+  display: block;
+  margin: 44px auto 0;
+}
+@media only screen and (max-width: 375px) {
+  .container img {
+    magin-top: 14px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .container img {
+    margin-top: 24px;
+  }
+}
+.container h1 {
+  font-family: "Pacifico";
+  font-size: 48px;
+  max-width: 360px;
+  line-height: 84px;
+  text-align: center;
+  color: #FCB371;
+  margin: 14px auto;
+}
+.container h1 span {
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 375px) {
+  .container h1 {
+    font-size: 12vw;
+    line-height: 24vw;
+  }
+}
+.container p {
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+.container .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .row a {
+  font-family: "Pacifico";
+  text-decoration: none;
+  color: #FCB371;
+  font-size: 12px;
+  padding: 14px 46px;
+}
+.container .row .btn {
+  border: 2px solid #FCB371;
+  min-width: 156px;
+  min-height: 46px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-sizing: border-box;
+  margin: 6.5px;
+}
+.container .row .btn-utama {
+  background-color: #FCB371;
+  color: #FFFFFF;
+}
 
 /*# sourceMappingURL=style.css.map */

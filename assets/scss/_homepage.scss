@@ -1,0 +1,111 @@
+$bg-color: rgba(42, 38, 61, 0.82);
+$warna-utama: #FCB371;
+$warna-kedua: #FFFFFF;
+$layar-hp: 375px;
+$layar-tablet: 768px;
+
+@mixin lebar-layar($media) {
+  @if $media == hp {
+    @media only screen and (max-width: $layar-hp) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $layar-hp + 1) and (max-width: $layar-tablet) { @content; }
+  }
+}
+
+body {
+  max-width: 100%;
+  height: auto;
+  background: url('../img/ImageBackground.png') no-repeat center fixed;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    background-color: $bg-color;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.container {
+  @include lebar-layar(hp) {
+    padding:0 3% 20%;
+  }
+  @include lebar-layar(tablet) {
+    padding: 0 3% 20%;
+  }
+  padding-bottom: 24px;
+  img {
+    @include lebar-layar(hp) {
+      magin-top: 14px;
+    }
+    @include lebar-layar(tablet) {
+      margin-top: 24px;
+    }
+    align-items: center;
+    display: block;
+    margin: 44px auto 0;
+  }
+
+  h1 {
+    span {
+      color: $warna-kedua;
+    }
+    @include lebar-layar(hp) {
+      font-size: 12vw;
+      line-height: 24vw;
+    }
+    font-family: 'Pacifico';
+    font-size: 48px;
+    max-width: 360px;
+    line-height: 84px;
+    text-align: center;
+    color: $warna-utama;
+    margin: 14px auto;
+  }
+  
+  p {
+    font-family: 'Roboto Condensed';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: $warna-kedua;
+    margin-bottom: 60px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      font-family: 'Pacifico';
+      text-decoration: none;
+      color: $warna-utama;
+      font-size: 12px;
+      padding: 14px 46px ;
+    }
+
+    .btn {
+      border: 2px solid $warna-utama;
+      min-width: 156px;
+      min-height: 46px;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      box-sizing: border-box;
+      margin: 6.5px;
+    }
+
+    .btn-utama {
+      background-color: $warna-utama;
+      color: $warna-kedua;
+    }
+  }
+}
