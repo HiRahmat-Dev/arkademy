@@ -48,13 +48,13 @@ table {
   border-spacing: 0;
 }
 
-body {
+body#homepage {
   max-width: 100%;
   height: auto;
   background: url("../img/ImageBackground.png") no-repeat center fixed;
   background-size: cover;
 }
-body::after {
+body#homepage::after {
   content: "";
   background-color: rgba(42, 38, 61, 0.82);
   position: fixed;
@@ -64,36 +64,35 @@ body::after {
   right: 0;
   z-index: -1;
 }
-
-.container {
+body#homepage .container {
   padding-bottom: 24px;
 }
-@media only screen and (max-width: 375px) {
-  .container {
+@media only screen and (max-width: 414px) {
+  body#homepage .container {
     padding: 0 3% 20%;
   }
 }
-@media only screen and (min-width: 376px) and (max-width: 768px) {
-  .container {
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  body#homepage .container {
     padding: 0 3% 20%;
   }
 }
-.container img {
+body#homepage .container img {
   align-items: center;
   display: block;
   margin: 44px auto 0;
 }
-@media only screen and (max-width: 375px) {
-  .container img {
+@media only screen and (max-width: 414px) {
+  body#homepage .container img {
     margin-top: 14px;
   }
 }
-@media only screen and (min-width: 376px) and (max-width: 768px) {
-  .container img {
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  body#homepage .container img {
     margin-top: 24px;
   }
 }
-.container h1 {
+body#homepage .container h1 {
   font-family: "Pacifico";
   font-size: 48px;
   max-width: 360px;
@@ -102,16 +101,16 @@ body::after {
   color: #FCB371;
   margin: 14px auto;
 }
-.container h1 span {
+body#homepage .container h1 span {
   color: #FFFFFF;
 }
-@media only screen and (max-width: 375px) {
-  .container h1 {
+@media only screen and (max-width: 414px) {
+  body#homepage .container h1 {
     font-size: 12vw;
     line-height: 24vw;
   }
 }
-.container p {
+body#homepage .container p {
   font-family: "Roboto Condensed";
   font-size: 14px;
   line-height: 16px;
@@ -119,19 +118,19 @@ body::after {
   color: #FFFFFF;
   margin-bottom: 60px;
 }
-.container .row {
+body#homepage .container .row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.container .row a {
+body#homepage .container .row a {
   font-family: "Pacifico";
   text-decoration: none;
   color: #FCB371;
   font-size: 12px;
   padding: 14px 46px;
 }
-.container .row .btn {
+body#homepage .container .row .btn {
   border: 2px solid #FCB371;
   min-width: 156px;
   min-height: 46px;
@@ -143,9 +142,95 @@ body::after {
   box-sizing: border-box;
   margin: 6.5px;
 }
-.container .row .btn-utama {
+body#homepage .container .row .btn-utama {
   background-color: #FCB371;
   color: #FFFFFF;
+}
+
+body#about-us {
+  max-width: 100%;
+  height: auto;
+  background: url("../img/bg1.png") no-repeat center fixed;
+  background-size: cover;
+}
+body#about-us::after {
+  content: "";
+  background-color: rgba(42, 38, 61, 0.82);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+body#about-us .container {
+  padding-bottom: 24px;
+}
+@media only screen and (max-width: 414px) {
+  body#about-us .container {
+    padding: 0 3% 20%;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  body#about-us .container {
+    padding: 0 3% 20%;
+  }
+}
+body#about-us .container a {
+  position: absolute;
+  top: 80px;
+  left: 56px;
+}
+@media only screen and (max-width: 414px) {
+  body#about-us .container a {
+    top: 20px;
+    left: 20px;
+  }
+  body#about-us .container a img {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  body#about-us .container a {
+    top: 40px;
+    left: 40px;
+  }
+}
+body#about-us .container h1 {
+  font-family: "Pacifico";
+  font-size: 48px;
+  line-height: 84px;
+  max-width: 360px;
+  text-align: center;
+  color: #FCB371;
+  margin: 171px auto 46px;
+}
+@media only screen and (max-width: 414px) {
+  body#about-us .container h1 {
+    font-size: 12vw;
+    line-height: 24vw;
+    margin: 30% auto 10%;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  body#about-us .container h1 {
+    margin: 25% auto 5%;
+  }
+}
+body#about-us .container p {
+  max-width: 768px;
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: auto;
+}
+@media only screen and (max-width: 414px) {
+  body#about-us .container p {
+    font-size: 7vw;
+    line-height: 8.25vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

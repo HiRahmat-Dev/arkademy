@@ -1,0 +1,94 @@
+$bg-color: rgba(42, 38, 61, 0.82);
+$biggest: 48px;
+$warna-utama: #FCB371;
+$warna-kedua: #FFFFFF;
+
+@mixin lebar-layar($media) {
+  @if $media == hp {
+    @media only screen and (max-width: $layar-hp) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $layar-hp + 1) and (max-width: $layar-tablet) { @content; }
+  }
+}
+
+body#about-us {
+  max-width: 100%;
+  height: auto;
+  background: url('../img/bg1.png') no-repeat center fixed;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    background-color: $bg-color;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .container {
+    @include lebar-layar(hp) {
+      padding:0 3% 20%;
+    }
+    @include lebar-layar(tablet) {
+      padding: 0 3% 20%;
+    }
+    padding-bottom: 24px;
+
+    a {
+      @include lebar-layar(hp) {
+        top: 20px;
+        left: 20px;
+        img {
+          width: 80%;
+        }
+      }
+      @include lebar-layar(tablet) {
+        top: 40px;
+        left: 40px;
+      }
+      position: absolute;
+      top: 80px;
+      left: 56px;
+    }
+  
+    h1 {
+      @include lebar-layar(hp) {
+        font-size: 12vw;
+        line-height: 24vw;
+        margin: 30% auto 10%;
+      }
+      @include lebar-layar(tablet) {
+        margin: 25% auto 5%;
+      }
+      font-family: 'Pacifico';
+      font-size: $biggest;
+      line-height: 84px;
+      max-width: 360px;
+      text-align: center;
+      color: $warna-utama;
+      margin: 171px auto 46px;
+    }
+    
+    p {
+      @include lebar-layar(hp) {
+        font-size: 7vw;
+        line-height: 8.25vw;
+      }
+      max-width: 768px;
+      font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
+      font-size: 28px;
+      line-height: 33px;
+      text-align: center;
+      color: $warna-kedua;
+      margin: auto;
+    }
+  
+  }
+
+}
+
+
