@@ -26,6 +26,7 @@ body#homepage {
     img {
       @include lebar-layar(hp) {
         margin-top: 14px;
+        width: 40vw;
       }
       @include lebar-layar(tablet) {
         margin-top: 24px;
@@ -53,6 +54,10 @@ body#homepage {
     }
     
     p {
+      @include lebar-layar(hp) {
+        font-size: 4vw;
+        line-height: 8vw;
+      }
       font-family: 'Roboto Condensed';
       font-size: 14px;
       line-height: 16px;
@@ -67,9 +72,12 @@ body#homepage {
       flex-wrap: wrap;
   
       a {
+        @include lebar-layar(hp) {
+          font-size: 3vw;
+        }
+        text-align: center;
         text-decoration: none;
         font-size: 12px;
-        padding: 14px 46px ;
       }     
     }
   }

@@ -94,6 +94,10 @@ body#reservation {
             flex-wrap: wrap;
           }
           select {
+            @include lebar-layar(hp) {
+
+              background-position: 83vw 21px;
+            }
             font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
             color: #A9A9A9;
             font-size: 12px;
