@@ -1,4 +1,5 @@
 $bg-color: rgba(42, 38, 61, 0.82);
+$biggest: 48px;
 $warna-utama: #FCB371;
 $warna-kedua: #FFFFFF;
 $layar-hp: 375px;
@@ -41,7 +42,7 @@ body {
   padding-bottom: 24px;
   img {
     @include lebar-layar(hp) {
-      magin-top: 14px;
+      margin-top: 14px;
     }
     @include lebar-layar(tablet) {
       margin-top: 24px;
@@ -60,7 +61,7 @@ body {
       line-height: 24vw;
     }
     font-family: 'Pacifico';
-    font-size: 48px;
+    font-size: $biggest;
     max-width: 360px;
     line-height: 84px;
     text-align: center;
