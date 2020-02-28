@@ -1,7 +1,7 @@
-body#about-us {
+body#reservation {
   max-width: 100%;
   height: auto;
-  background: url('../img/bg1.png') no-repeat center fixed;
+  background: url('../img/bg2.png') no-repeat center fixed;
   background-size: cover;
 
   &::after {
@@ -56,23 +56,39 @@ body#about-us {
       max-width: 360px;
       text-align: center;
       color: $warna-utama;
-      margin: 171px auto 46px;
+      margin: 58px auto 67px;
     }
-    
-    p {
-      @include lebar-layar(hp) {
-        font-size: 7vw;
-        line-height: 8.25vw;
+
+    .row {
+      display: flex;
+      justify-content: center;
+
+      form {
+        width: 382px;
+
+        input {
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
+            color: #A9A9A9;
+            font-size: 12px;
+          }
+          width: 100%;
+          padding: 16px;
+          border: none;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+        }
       }
-      max-width: 768px;
-      font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
-      font-size: 28px;
-      line-height: 33px;
-      text-align: center;
-      color: $warna-kedua;
-      margin: auto;
     }
-  
+
+
   }
 
 }
