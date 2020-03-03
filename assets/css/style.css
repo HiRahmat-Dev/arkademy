@@ -48,13 +48,13 @@ table {
   border-spacing: 0;
 }
 
-body#homepage {
+#homepage {
   max-width: 100%;
   height: auto;
   background: url("../img/ImageBackground.png") no-repeat center fixed;
   background-size: cover;
 }
-body#homepage::after {
+#homepage::after {
   content: "";
   background-color: rgba(42, 38, 61, 0.82);
   position: fixed;
@@ -64,36 +64,36 @@ body#homepage::after {
   right: 0;
   z-index: -1;
 }
-body#homepage .container {
+#homepage .container {
   padding-bottom: 24px;
 }
 @media only screen and (max-width: 414px) {
-  body#homepage .container {
+  #homepage .container {
     padding: 0 3% 20%;
   }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
-  body#homepage .container {
+  #homepage .container {
     padding: 0 3% 20%;
   }
 }
-body#homepage .container img {
+#homepage .container img {
   align-items: center;
   display: block;
   margin: 44px auto 0;
 }
 @media only screen and (max-width: 414px) {
-  body#homepage .container img {
+  #homepage .container img {
     margin-top: 14px;
     width: 40vw;
   }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
-  body#homepage .container img {
+  #homepage .container img {
     margin-top: 24px;
   }
 }
-body#homepage .container h1 {
+#homepage .container h1 {
   font-family: "Pacifico";
   font-size: 48px;
   max-width: 360px;
@@ -102,16 +102,16 @@ body#homepage .container h1 {
   color: #fcb371;
   margin: 14px auto;
 }
-body#homepage .container h1 span {
+#homepage .container h1 span {
   color: #ffffff;
 }
 @media only screen and (max-width: 414px) {
-  body#homepage .container h1 {
+  #homepage .container h1 {
     font-size: 12vw;
     line-height: 24vw;
   }
 }
-body#homepage .container p {
+#homepage .container p {
   font-family: "Roboto Condensed";
   font-size: 14px;
   line-height: 16px;
@@ -120,34 +120,34 @@ body#homepage .container p {
   margin-bottom: 60px;
 }
 @media only screen and (max-width: 414px) {
-  body#homepage .container p {
+  #homepage .container p {
     font-size: 4vw;
     line-height: 8vw;
   }
 }
-body#homepage .container .row {
+#homepage .container .row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-body#homepage .container .row a {
+#homepage .container .row a {
   text-align: center;
   text-decoration: none;
   font-size: 12px;
 }
 @media only screen and (max-width: 414px) {
-  body#homepage .container .row a {
+  #homepage .container .row a {
     font-size: 3vw;
   }
 }
 
-body#about-us {
+#about-us {
   max-width: 100%;
   height: auto;
   background: url("../img/bg1.png") no-repeat center fixed;
   background-size: cover;
 }
-body#about-us::after {
+#about-us::after {
   content: "";
   background-color: rgba(42, 38, 61, 0.82);
   position: fixed;
@@ -157,40 +157,40 @@ body#about-us::after {
   right: 0;
   z-index: -1;
 }
-body#about-us .container {
+#about-us .container {
   padding-bottom: 24px;
 }
 @media only screen and (max-width: 414px) {
-  body#about-us .container {
+  #about-us .container {
     padding: 0 3% 20%;
   }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
-  body#about-us .container {
+  #about-us .container {
     padding: 0 3% 20%;
   }
 }
-body#about-us .container a {
+#about-us .container a {
   position: absolute;
   top: 68px;
   left: 48px;
 }
 @media only screen and (max-width: 414px) {
-  body#about-us .container a {
+  #about-us .container a {
     top: 20px;
     left: 20px;
   }
-  body#about-us .container a img {
+  #about-us .container a img {
     width: 80%;
   }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
-  body#about-us .container a {
+  #about-us .container a {
     top: 40px;
     left: 40px;
   }
 }
-body#about-us .container h1 {
+#about-us .container h1 {
   font-family: "Pacifico";
   font-size: 48px;
   line-height: 84px;
@@ -200,18 +200,18 @@ body#about-us .container h1 {
   margin: 171px auto 46px;
 }
 @media only screen and (max-width: 414px) {
-  body#about-us .container h1 {
+  #about-us .container h1 {
     font-size: 12vw;
     line-height: 24vw;
     margin: 30% auto 10%;
   }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
-  body#about-us .container h1 {
+  #about-us .container h1 {
     margin: 25% auto 5%;
   }
 }
-body#about-us .container p {
+#about-us .container p {
   max-width: 768px;
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   font-size: 28px;
@@ -221,19 +221,19 @@ body#about-us .container p {
   margin: auto;
 }
 @media only screen and (max-width: 414px) {
-  body#about-us .container p {
+  #about-us .container p {
     font-size: 7vw;
     line-height: 8.25vw;
   }
 }
 
-body#reservation {
+#reservation {
   max-width: 100%;
   height: auto;
   background: url("../img/bg2.png") no-repeat center fixed;
   background-size: cover;
 }
-body#reservation::after {
+#reservation::after {
   content: "";
   background-color: rgba(42, 38, 61, 0.82);
   position: fixed;
@@ -243,40 +243,40 @@ body#reservation::after {
   right: 0;
   z-index: -1;
 }
-body#reservation .container {
+#reservation .container {
   padding-bottom: 24px;
 }
 @media only screen and (max-width: 414px) {
-  body#reservation .container {
+  #reservation .container {
     padding: 0 3% 20%;
   }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
-  body#reservation .container {
+  #reservation .container {
     padding: 0 3% 20%;
   }
 }
-body#reservation .container a {
+#reservation .container a {
   position: absolute;
   top: 68px;
   left: 48px;
 }
 @media only screen and (max-width: 414px) {
-  body#reservation .container a {
+  #reservation .container a {
     top: 20px;
     left: 20px;
   }
-  body#reservation .container a img {
+  #reservation .container a img {
     width: 80%;
   }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
-  body#reservation .container a {
+  #reservation .container a {
     top: 40px;
     left: 40px;
   }
 }
-body#reservation .container h1 {
+#reservation .container h1 {
   font-family: "Pacifico";
   font-size: 48px;
   line-height: 84px;
@@ -286,27 +286,27 @@ body#reservation .container h1 {
   margin: 58px auto 67px;
 }
 @media only screen and (max-width: 414px) {
-  body#reservation .container h1 {
+  #reservation .container h1 {
     font-size: 12vw;
     line-height: 24vw;
     margin: 20% auto 5%;
   }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
-  body#reservation .container h1 {
+  #reservation .container h1 {
     margin: 15% auto 5%;
   }
 }
-body#reservation .container .row {
+#reservation .container .row {
   display: flex;
   justify-content: center;
 }
-body#reservation .container .row form {
+#reservation .container .row form {
   width: 460px;
   display: flex;
   flex-direction: column;
 }
-body#reservation .container .row form input, body#reservation .container .row form select, body#reservation .container .row form textarea {
+#reservation .container .row form input, #reservation .container .row form select, #reservation .container .row form textarea {
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   padding: 16px;
   margin: 8px;
@@ -319,23 +319,23 @@ body#reservation .container .row form input, body#reservation .container .row fo
   -o-border-radius: 8px;
   resize: none;
 }
-body#reservation .container .row form input:focus, body#reservation .container .row form select:focus, body#reservation .container .row form textarea:focus {
+#reservation .container .row form input:focus, #reservation .container .row form select:focus, #reservation .container .row form textarea:focus {
   outline: none;
 }
-body#reservation .container .row form input::placeholder, body#reservation .container .row form select::placeholder, body#reservation .container .row form textarea::placeholder {
+#reservation .container .row form input::placeholder, #reservation .container .row form select::placeholder, #reservation .container .row form textarea::placeholder {
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   color: #A9A9A9;
   font-size: 12px;
 }
-body#reservation .container .row form .grup-formulir {
+#reservation .container .row form .grup-formulir {
   display: flex;
 }
 @media only screen and (max-width: 414px) {
-  body#reservation .container .row form .grup-formulir {
+  #reservation .container .row form .grup-formulir {
     flex-wrap: wrap;
   }
 }
-body#reservation .container .row form .grup-formulir select {
+#reservation .container .row form .grup-formulir select {
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   color: #A9A9A9;
   font-size: 12px;
@@ -347,11 +347,11 @@ body#reservation .container .row form .grup-formulir select {
   background-position: 182px 21px;
 }
 @media only screen and (max-width: 414px) {
-  body#reservation .container .row form .grup-formulir select {
+  #reservation .container .row form .grup-formulir select {
     background-position: 83vw 21px;
   }
 }
-body#reservation .container .row form .grup-formulir input, body#reservation .container .row form .grup-formulir select {
+#reservation .container .row form .grup-formulir input, #reservation .container .row form .grup-formulir select {
   width: 100%;
 }
 
