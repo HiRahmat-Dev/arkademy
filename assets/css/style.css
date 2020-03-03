@@ -355,6 +355,134 @@ table {
   width: 100%;
 }
 
+#login {
+  max-width: 100%;
+  height: auto;
+  background: url("../img/bg2.png") no-repeat center fixed;
+  background-size: cover;
+}
+#login::after {
+  content: "";
+  background-color: rgba(42, 38, 61, 0.82);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+#login .container {
+  padding-bottom: 24px;
+}
+@media only screen and (max-width: 414px) {
+  #login .container {
+    padding: 0 3% 20%;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  #login .container {
+    padding: 0 3% 20%;
+  }
+}
+#login .container a {
+  position: absolute;
+  top: 68px;
+  left: 48px;
+}
+@media only screen and (max-width: 414px) {
+  #login .container a {
+    top: 20px;
+    left: 20px;
+  }
+  #login .container a img {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  #login .container a {
+    top: 40px;
+    left: 40px;
+  }
+}
+#login .container h1 {
+  font-family: "Pacifico";
+  font-size: 48px;
+  line-height: 84px;
+  max-width: 360px;
+  text-align: center;
+  color: #fcb371;
+  margin: 58px auto 67px;
+}
+@media only screen and (max-width: 414px) {
+  #login .container h1 {
+    font-size: 12vw;
+    line-height: 24vw;
+    margin: 20% auto 5%;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  #login .container h1 {
+    margin: 15% auto 5%;
+  }
+}
+#login .container .row {
+  display: flex;
+  justify-content: center;
+}
+#login .container .row form {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+}
+#login .container .row form input, #login .container .row form select, #login .container .row form textarea {
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  padding: 16px;
+  margin: 8px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  resize: none;
+}
+#login .container .row form input:focus, #login .container .row form select:focus, #login .container .row form textarea:focus {
+  outline: none;
+}
+#login .container .row form input::placeholder, #login .container .row form select::placeholder, #login .container .row form textarea::placeholder {
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  color: #A9A9A9;
+  font-size: 12px;
+}
+#login .container .row form .grup-formulir {
+  display: flex;
+}
+@media only screen and (max-width: 414px) {
+  #login .container .row form .grup-formulir {
+    flex-wrap: wrap;
+  }
+}
+#login .container .row form .grup-formulir select {
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  color: #A9A9A9;
+  font-size: 12px;
+  background-image: url("../img/Polygon 1.svg");
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: 182px 21px;
+}
+@media only screen and (max-width: 414px) {
+  #login .container .row form .grup-formulir select {
+    background-position: 83vw 21px;
+  }
+}
+#login .container .row form .grup-formulir input, #login .container .row form .grup-formulir select {
+  width: 100%;
+}
+
 .warna-pertama {
   color: #fcb371;
 }

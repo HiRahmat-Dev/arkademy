@@ -1,0 +1,120 @@
+#login {
+  max-width: 100%;
+  height: auto;
+  background: url('../img/bg2.png') no-repeat center fixed;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    background-color: $bg-color;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .container {
+    @include lebar-layar(hp) {
+      padding:0 3% 20%;
+    }
+    @include lebar-layar(tablet) {
+      padding: 0 3% 20%;
+    }
+    padding-bottom: 24px;
+
+    a {
+      @include lebar-layar(hp) {
+        top: 20px;
+        left: 20px;
+        img {
+          width: 80%;
+        }
+      }
+      @include lebar-layar(tablet) {
+        top: 40px;
+        left: 40px;
+      }
+      position: absolute;
+      top: 80px-12;
+      left: 56px-8;
+    }
+  
+    h1 {
+      @include lebar-layar(hp) {
+        font-size: 12vw;
+        line-height: 24vw;
+        margin: 20% auto 5%;
+      }
+      @include lebar-layar(tablet) {
+        margin: 15% auto 5%;
+      }
+      font-family: 'Pacifico';
+      font-size: $biggest;
+      line-height: 84px;
+      max-width: 360px;
+      text-align: center;
+      color: $warna-utama;
+      margin: 58px auto 67px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      form {
+        width: 460px;
+        display: flex;
+        flex-direction: column;
+        input, select, textarea{
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
+            color: #A9A9A9;
+            font-size: 12px;
+          }
+          font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
+          padding: 16px;
+          margin: 8px;
+          border: none;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          resize: none;
+        }
+
+        .grup-formulir {
+          display: flex;
+          @include lebar-layar(hp) {
+            flex-wrap: wrap;
+          }
+          select {
+            @include lebar-layar(hp) {
+
+              background-position: 83vw 21px;
+            }
+            font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
+            color: #A9A9A9;
+            font-size: 12px;
+            background-image: url('../img/Polygon\ 1.svg');
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-repeat: no-repeat;
+            background-position: 182px 21px;
+          }
+          input, select {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
